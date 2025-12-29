@@ -1,3 +1,4 @@
+LICENSE
 README.md
 pyproject.toml
 hotwheels_triage/__init__.py
