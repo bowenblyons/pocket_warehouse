@@ -1,0 +1,12 @@
+services:
+  virtual-pi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/arm64
+    image: virtual-pi
+    volumes:
+      - .:/usr/src/app
+    command: /bin/bash
+    tty: true
+    stdin_open: true
