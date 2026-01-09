@@ -3,8 +3,10 @@ from dataclasses import dataclass
 @dataclass
 class ClassificationResult:
     model_guess: str
-    damage_score: float
     confidence: float
+    low: float
+    moderate: float
+    severe: float
 
 @dataclass
 class TriageDecision:

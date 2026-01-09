@@ -9,7 +9,5 @@ ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
-RUN pip install --no-cache-dir tflite-runtime opencv-python-headless "numpy<2" Pillow
-
 WORKDIR /usr/src/app
 CMD ["/bin/bash"]

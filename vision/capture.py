@@ -17,5 +17,5 @@ class SimCamera(Camera):
         images = [ image for image in os.listdir(cat_path) if image.lower().endswith(('.jpg'))]
         img = random.choice(images)
         img_path = os.path.join(cat_path, img)
-        return cv2.imread(img_path)
+        return img_path
     
