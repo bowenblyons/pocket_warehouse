@@ -1,0 +1,31 @@
+CONFIG:
+  pricing:
+    resell_market_value: 5.00
+    labor_per_repair: 0.50
+  parts:
+    axle:
+      cost: 0.25
+      repair_cost: 0.10
+      stock: 2
+      restock_at: 1
+    wheel:
+      cost: 0.20
+      repair_cost: 0.05
+      stock: 4
+      restock_at: 2
+    frame:
+      cost: 2.50
+      repair_cost: 1.00
+      stock: 0
+      restock_at: -1
+    body:
+      cost: 1.50
+      repair_cost: 0.30
+      stock: 1
+      restock_at: 0
+    paint:
+      cost: 0.10
+      repair_cost: 0.75
+      stock: 240
+      restock_at: 20
+      
