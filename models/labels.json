@@ -1,0 +1,990 @@
+[
+  {
+    "id": "car01",
+    "file_paths": ["dataset/images/car01/car01_0001.jpg", "dataset/images/car01/car01_0008.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 3,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car02",
+    "file_paths": ["dataset/images/car02/car02_0005.jpg", "dataset/images/car02/car02_0010.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 4,
+        "functional": 2
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car03",
+    "file_paths": ["dataset/images/car03/car03_0005.jpg", "dataset/images/car03/car03_0012.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 1,
+        "functional": 1
+      },
+      "wheels": {
+        "severity": 1,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 1,
+        "functional": 1
+      },
+      "body": {
+        "severity": 4,
+        "functional": 2
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car04",
+    "file_paths": ["dataset/images/car04/car04_0002.jpg", "dataset/images/car04/car04_0010.jpg", "dataset/images/car04/car04_0011.jpg", "dataset/images/car04/car04_0012.jpg", "dataset/images/car04/car04_0013.jpg", "dataset/images/car04/car04_0018.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 1,
+        "functional": 1
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 3,
+        "functional": 2
+      },
+      "body": {
+        "severity": 3,
+        "functional": 2
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car05",
+    "file_paths": ["dataset/images/car05/car05_0006.jpg", "dataset/images/car05/car05_0013.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 4,
+        "functional": 2
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car06",
+    "file_paths": ["dataset/images/car06/car06_0002.jpg", "dataset/images/car06/car06_0010.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 1,
+        "functional": 1
+      },
+      "wheels": {
+        "severity": 4,
+        "functional": 2
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 4,
+        "functional": 2
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car07",
+    "file_paths": ["dataset/images/car07/car07_0001.jpg", "dataset/images/car07/car07_0002.jpg", "dataset/images/car07/car07_0003.jpg", "dataset/images/car07/car07_0004.jpg", "dataset/images/car07/car07_0013.jpg", "dataset/images/car07/car07_0014.jpg", "dataset/images/car07/car07_0021.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 4,
+        "functional": 2
+      },
+      "wheels": {
+        "severity": 1,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 3,
+        "functional": 2
+      },
+      "paint": {
+        "severity": 2,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car08",
+    "file_paths": ["dataset/images/car08/car08_0002.jpg", "dataset/images/car08/car08_0003.jpg", "dataset/images/car08/car08_0009.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car09",
+    "file_paths": ["dataset/images/car09/car09_0002.jpg", "dataset/images/car09/car09_0003.jpg", "dataset/images/car09/car09_0011.jpg", "dataset/images/car09/car09_0012.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car10",
+    "file_paths": ["dataset/images/car10/car10_0002.jpg", "dataset/images/car10/car10_0003.jpg", "dataset/images/car10/car10_0009.jpg", "dataset/images/car10/car10_0010.jpg", "dataset/images/car10/car10_0011.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car11",
+    "file_paths": ["dataset/images/car11/car11_0002.jpg", "dataset/images/car11/car11_0003.jpg", "dataset/images/car11/car11_0012.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car12",
+    "file_paths": ["dataset/images/car12/car12_0003.jpg", "dataset/images/car12/car12_0004.jpg", "dataset/images/car12/car12_0005.jpg", "dataset/images/car12/car12_0012.jpg", "dataset/images/car12/car12_0013.jpg", "dataset/images/car12/car12_0014.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car14",
+    "file_paths": ["dataset/images/car14/car14_0002.jpg", "dataset/images/car14/car14_0003.jpg", "dataset/images/car14/car14_0010.jpg", "dataset/images/car14/car14_0011.jpg", "dataset/images/car14/car14_0016.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car15",
+    "file_paths": ["dataset/images/car15/car15_0003.jpg", "dataset/images/car15/car15_0004.jpg", "dataset/images/car15/car15_0011.jpg", "dataset/images/car15/car15_0012.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 2,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 4,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car16",
+    "file_paths": ["dataset/images/car16/car16_0001.jpg", "dataset/images/car16/car16_0002.jpg", "dataset/images/car16/car16_0010.jpg", "dataset/images/car16/car16_0011.jpg", "dataset/images/car16/car16_0018.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 1,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car17",
+    "file_paths": ["dataset/images/car17/car17_0003.jpg", "dataset/images/car17/car17_0009.jpg", "dataset/images/car17/car17_0010.jpg", "dataset/images/car17/car17_0016.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 2,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 2,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car18",
+    "file_paths": ["dataset/images/car18/car18_0002.jpg", "dataset/images/car18/car18_0010.jpg", "dataset/images/car18/car18_0011.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 2,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car19",
+    "file_paths": ["dataset/images/car19/car19_0002.jpg", "dataset/images/car19/car19_0003.jpg", "dataset/images/car19/car19_0008.jpg", "dataset/images/car19/car19_0009.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 3,
+        "functional": 2
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car20",
+    "file_paths": ["dataset/images/car20/car20_0002.jpg", "dataset/images/car20/car20_0003.jpg", "dataset/images/car20/car20_0009.jpg", "dataset/images/car20/car20_0010.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 1,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car21",
+    "file_paths": ["dataset/images/car21/car21_0002.jpg", "dataset/images/car21/car21_0003.jpg", "dataset/images/car21/car21_0008.jpg", "dataset/images/car21/car21_0009.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car22",
+    "file_paths": ["dataset/images/car22/car22_0003.jpg", "dataset/images/car22/car22_0008.jpg", "dataset/images/car22/car22_0014.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car23",
+    "file_paths": ["dataset/images/car23/car23_0002.jpg", "dataset/images/car23/car23_0003.jpg", "dataset/images/car23/car23_0008.jpg", "dataset/images/car23/car23_0013.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car24",
+    "file_paths": ["dataset/images/car24/car24_0002.jpg", "dataset/images/car24/car24_0007.jpg", "dataset/images/car24/car24_0011.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 4,
+        "functional": 2
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car25",
+    "file_paths": ["dataset/images/car25/car25_0002.jpg", "dataset/images/car25/car25_0006.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car26",
+    "file_paths": ["dataset/images/car26/car26_0002.jpg", "dataset/images/car26/car26_0003.jpg", "dataset/images/car26/car26_0007.jpg", "dataset/images/car26/car26_0008.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 2,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car27",
+    "file_paths": ["dataset/images/car27/car27_0008.jpg", "dataset/images/car27/car27_0013.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 2,
+        "functional": 1
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car28",
+    "file_paths": ["dataset/images/car28/car28_0002.jpg", "dataset/images/car28/car28_0003.jpg", "dataset/images/car28/car28_0007.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 2,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car29",
+    "file_paths": ["dataset/images/car29/car29_0002.jpg", "dataset/images/car29/car29_0007.jpg", "dataset/images/car29/car29_0012.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car30",
+    "file_paths": ["dataset/images/car30/car30_0002.jpg", "dataset/images/car30/car30_0003.jpg", "dataset/images/car30/car30_0008.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 1,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car31",
+    "file_paths": ["dataset/images/car31/car31_0002.jpg", "dataset/images/car31/car31_0003.jpg", "dataset/images/car31/car31_0009.jpg", "dataset/images/car31/car31_0010.jpg", "dataset/images/car31/car31_0015.jpg", "dataset/images/car31/car31_0016.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car32",
+    "file_paths": ["dataset/images/car32/car32_0002.jpg", "dataset/images/car32/car32_0003.jpg", "dataset/images/car32/car32_0004.jpg", "dataset/images/car32/car32_0009.jpg", "dataset/images/car32/car32_0010.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car34",
+    "file_paths": ["dataset/images/car34/car34_0003.jpg", "dataset/images/car34/car34_0004.jpg", "dataset/images/car34/car34_0008.jpg", "dataset/images/car34/car34_0009.jpg", "dataset/images/car34/car34_0013.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car35",
+    "file_paths": ["dataset/images/car35/car35_0002.jpg", "dataset/images/car35/car35_0003.jpg", "dataset/images/car35/car35_0008.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car36",
+    "file_paths": ["dataset/images/car36/car36_0007.jpg", "dataset/images/car36/car36_0012.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 1,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car37",
+    "file_paths": ["dataset/images/car37/car37_0002.jpg", "dataset/images/car37/car37_0003.jpg", "dataset/images/car37/car37_0008.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 1,
+        "functional": 1
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car38",
+    "file_paths": ["dataset/images/car38/car38_0002.jpg", "dataset/images/car38/car38_0003.jpg", "dataset/images/car38/car38_0010.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car39",
+    "file_paths": ["dataset/images/car39/car39_0003.jpg", "dataset/images/car39/car39_0008.jpg", "dataset/images/car39/car39_0009.jpg", "dataset/images/car39/car39_0013.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 1,
+        "functional": 0
+      }
+    }
+  },
+  {
+    "id": "car40",
+    "file_paths": ["dataset/images/car40/car40_0003.jpg", "dataset/images/car40/car40_0004.jpg", "dataset/images/car40/car40_0007.jpg", "dataset/images/car40/car40_0008.jpg", "dataset/images/car40/car40_0012.jpg", "dataset/images/car40/car40_0015.jpg"],
+    "condition": {
+      "axle": {
+        "severity": 0,
+        "functional": 0
+      },
+      "wheels": {
+        "severity": 0,
+        "functional": 0
+      },
+      "frame": {
+        "severity": 0,
+        "functional": 0
+      },
+      "body": {
+        "severity": 0,
+        "functional": 0
+      },
+      "paint": {
+        "severity": 0,
+        "functional": 0
+      }
+    }
+  }
+]
