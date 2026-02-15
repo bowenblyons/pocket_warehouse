@@ -27,7 +27,8 @@ class Arm():
     SHOULDER_LOWER: int = 20
     CLAW_OPEN: int = 140
     CLAW_CLOSE: int = 30
-
+    servo_id: list[int]
+    servo: Servo
     
     def __init__(self):
         servo_id: list[int] = [0, 1, 2, 3, 4] # 5 is platform swivel

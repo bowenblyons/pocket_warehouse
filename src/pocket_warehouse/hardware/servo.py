@@ -1,7 +1,7 @@
-from board import SCL, SDA  # type: ignore
-import busio  # type: ignore
-from adafruit_motor import servo  # type: ignore
-from adafruit_pca9685 import PCA9685  # type: ignore
+from board import SCL, SDA
+import busio
+from adafruit_motor import servo
+from adafruit_pca9685 import PCA9685
 
 
 class Servo:

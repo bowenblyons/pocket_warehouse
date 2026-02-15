@@ -1,33 +1,13 @@
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
-# SeverityLevel:
-#     NO_DAMAGE = 0
-#     MINOR = 1
-#     MODERATE = 2
-#     SEVERE = 3
-#     MISSING = 4
-
-# FunctionalLevel:
-#     NO_IMAIRMENT = 0
-#     IMPAIRED = 1
-#     NON_FUNCTIONAL = 2
-
-# TriageResult:
-#     REVIEW = "review"
-#     RESELL = "resell"
-#     REFURBISH = "refurbish"
-#     SCRAP = "scrap"
-
-# PartType:
-#     AXLES= "axles"
-#     WHEELS = "wheels"
-#     FRAME = "frame"
-#     BODY = "body"
-#     PAINT = "paint"
+################################################
+########## CLASSIFICATION CLASSES ##############
+################################################
 
 @dataclass
 class PartClassification:
+    name: str
     severity: int
     severity_confidence: float
     functional: int
@@ -66,9 +46,14 @@ class ClassificationResult:
     def min_confidence(self) -> float:
         """Get the lowest confidence score from the parts"""
         return min(part.min_confidence for part in self.get_parts())
+    
+#############################################
+######## FIN AND DATABASE ###################
+#############################################
 
 @dataclass
 class PartRequirement:
+    name: str
     action: str
     cost: float
     is_stocked: bool

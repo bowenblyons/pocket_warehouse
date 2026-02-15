@@ -1,7 +1,5 @@
 adafruit-blinka
 adafruit-circuitpython-pca9685
 adafruit-circuitpython-motor
-onnxruntime
 numpy
 pillow
-torchvision
