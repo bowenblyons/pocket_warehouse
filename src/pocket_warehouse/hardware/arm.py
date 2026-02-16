@@ -1,7 +1,8 @@
 from pocket_warehouse.hardware.servo import Servo
 import time
 
-class Arm():
+
+class Arm:
     """Controls robotic arm for Hot Wheels triage system.
 
     Manages 5 servos for base rotation, shoulder, elbow, wrist, and claw.
@@ -13,7 +14,7 @@ class Arm():
     SERVO_BASE: int = 0
     SERVO_SHOULDER: int = 1
     SERVO_ELBOW: int = 2
-    # wrist servo is bad: SERVO_WRIST: int = 3     
+    # wrist servo is bad: SERVO_WRIST: int = 3
     SERVO_CLAW: int = 4
 
     # angles
@@ -27,12 +28,10 @@ class Arm():
     SHOULDER_LOWER: int = 20
     CLAW_OPEN: int = 140
     CLAW_CLOSE: int = 30
-    servo_id: list[int]
-    servo: Servo
-    
+
     def __init__(self):
-        servo_id: list[int] = [0, 1, 2, 3, 4] # 5 is platform swivel
-        servo: Servo = Servo()
+        self.servo_id: list[int] = [0, 1, 2, 3, 4]  # 5 is platform swivel
+        self.servo: Servo = Servo()
         self.__home()
 
     def __set_angle(self, servo: int, angle: int, delay: float = 2.0) -> None:
@@ -44,7 +43,7 @@ class Arm():
         """Return all servos to home position"""
         for i in self.servo_id:
             self.__set_angle(i, self.HOME)
-            
+
     def __close_claw(self) -> None:
         self.__set_angle(self.SERVO_CLAW, self.CLAW_CLOSE)
 

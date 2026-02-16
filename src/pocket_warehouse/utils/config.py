@@ -3,6 +3,7 @@ import yaml
 from dataclasses import dataclass
 from typing import Any
 
+
 @dataclass
 class PartConfig:
     cost: float
@@ -10,10 +11,12 @@ class PartConfig:
     stock: int
     restock_at: int
 
+
 @dataclass
 class Config:
     resell_market_value: float
     labor_per_repair: float
+    confidence_threshold: float
     parts: dict[str, PartConfig]
 
     @classmethod
@@ -28,10 +31,12 @@ class Config:
             resell_market_value=data["resell_market_value"],
             labor_per_repair=data["labor_per_repair"],
             parts=parts,
+            confidence_threshold=data["confidence_threshold"],
         )
 
 
 _config: Config | None = None
+
 
 def load_config(path: Path = Path("config/config.yaml")) -> None:
 
@@ -43,6 +48,7 @@ def load_config(path: Path = Path("config/config.yaml")) -> None:
 
         _config = Config.from_dict(raw)
 
+
 def get_config() -> Config:
 
     if _config is None:
@@ -51,5 +57,6 @@ def get_config() -> Config:
     assert _config is not None
 
     return _config
+
 
 load_config()
