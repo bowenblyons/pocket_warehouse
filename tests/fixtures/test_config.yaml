@@ -1,0 +1,29 @@
+labor_per_repair: 1.00
+resell_market_value: 5.00
+confidence_threshold: 0.70
+parts:
+  wheel:
+    cost: 0.25
+    repair_cost: 0.25
+    stock: 4
+    restock_at: 3
+  axle:
+    cost: 0.50
+    repair_cost: 0.50
+    stock: 0
+    restock_at: -1
+  frame:
+    cost: 0.75
+    repair_cost: 0.50
+    stock: 2
+    restock_at: -1
+  body:
+    cost: 0.75
+    repair_cost: 0.50
+    stock: 1
+    restock_at: 0
+  paint:
+    cost: 0.10
+    repair_cost: 0.50
+    stock: 200
+    restock_at: 50
