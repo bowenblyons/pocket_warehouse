@@ -1,8 +1,14 @@
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
 
 
 class Camera:
+    """Controls camera for hot wheels triage system.
+
+    Manages a single camera module on the raspberry pi,
+    captures an image and puts it in the data/captures directory.
+    """
+
     def __init__(self, data_dir: Path = Path("data/captures")) -> None:
         from picamera2 import Picamera2
 
@@ -15,6 +21,7 @@ class Camera:
         self.camera.start()
 
     def capture(self, filename: str | None) -> Path:
+        """Captures an image and returns its path."""
         if filename is None:
             timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
             filename = f"image{timestamp}.jpg"

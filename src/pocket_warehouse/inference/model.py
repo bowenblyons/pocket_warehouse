@@ -1,8 +1,8 @@
 import numpy as np
-from PIL import Image
 from ai_edge_litert.interpreter import Interpreter
+from PIL import Image
 
-CAR_PARTS = ["axle", "wheels", "frame", "body", "paint"]
+CAR_PARTS = ["axle", "wheel", "frame", "body", "paint"]
 
 
 class PocketWarehouseInference:

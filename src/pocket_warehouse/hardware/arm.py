@@ -1,5 +1,6 @@
-from pocket_warehouse.hardware.servo import Servo
 import time
+
+from pocket_warehouse.hardware.servo import Servo
 
 
 class Arm:
