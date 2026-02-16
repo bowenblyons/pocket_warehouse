@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 ################################################
 ########## CLASSIFICATION CLASSES ##############
@@ -8,6 +8,8 @@ from datetime import datetime, timezone
 
 @dataclass
 class PartClassification:
+    """Represents a the models classification for a single part."""
+
     name: str
     severity: int
     severity_confidence: float
@@ -17,12 +19,12 @@ class PartClassification:
     def __post_init__(self):
         """Validate confidence scores"""
         if not 0.0 <= self.severity_confidence <= 1.0:
-            raise ValueError(
-                f"severity_confidence must be 0-1, got {self.severity_confidence}"
-            )
+            sev_con = self.severity_confidence
+            raise ValueError(f"severity_confidence must be 0-1, got {sev_con}")
         if not 0.0 <= self.functional_confidence <= 1.0:
+            fun_con = self.functional_confidence
             raise ValueError(
-                f"functional_confidence must be 0-1, got {self.functional_confidence}"
+                f"functional_confidence must be 0-1, got {fun_con}"
             )
 
     @property
@@ -33,6 +35,8 @@ class PartClassification:
 
 @dataclass
 class ClassificationResult:
+    """ "Represents the classification of all parts on the vehicle."""
+
     axle: PartClassification
     wheel: PartClassification
     frame: PartClassification
@@ -42,7 +46,7 @@ class ClassificationResult:
 
     def __post_init__(self):
         if self.timestamp is None:
-            self.timestamp = datetime.now(tz=timezone.utc)
+            self.timestamp = datetime.now(tz=UTC)
 
     def get_parts(self) -> list[PartClassification]:
         """Get dictionary of parts"""
@@ -61,6 +65,14 @@ class ClassificationResult:
 
 @dataclass
 class PartRequirement:
+    """Info about a single part relevant for triage system.
+
+    name - part name,
+    action - resell|refurbish|scrap|review,
+    cost - cost to repair,
+    is_stocked - true if the part is in stock
+    """
+
     name: str
     action: str
     cost: float
@@ -69,6 +81,9 @@ class PartRequirement:
 
 @dataclass
 class FinancialAnalysis:
+    """Info about the financial viability of the repair
+    based on the expected resale value."""
+
     total_cost: float
     expected_resale: float
 
@@ -92,6 +107,9 @@ class FinancialAnalysis:
 
 @dataclass
 class InventoryImpact:
+    """Calculated impact to current inventory
+    used to update database in future iteration."""
+
     parts_needed: dict[str, int]
     remaining: dict[str, int]
     reorder_triggered: list[str]
@@ -99,6 +117,9 @@ class InventoryImpact:
 
 @dataclass
 class TriageDecision:
+    """The decision made by the triage system
+    along with information for json log output."""
+
     decision: str
     reason: str
     confidence: float
@@ -111,6 +132,6 @@ class TriageDecision:
 
     def __post_init__(self):
         if self.timestamp is None:
-            self.timestamp = datetime.now(tz=timezone.utc)
+            self.timestamp = datetime.now(tz=UTC)
 
     # method to export it to json/dictionary
