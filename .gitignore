@@ -1,4 +1,4 @@
 .venv/
 data/captures/
 *__pycache__/
-*.egg*
+*.egg-info
