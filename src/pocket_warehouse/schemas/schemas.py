@@ -60,14 +60,8 @@ class PartRequirement:
 
 @dataclass
 class FinancialAnalysis:
-    repair_cost: float
-    labor_cost: float
+    total_cost: float
     expected_resale: float
-
-    @property
-    def total_cost(self) -> float:
-        """Total cost of needed repairs"""
-        return self.repair_cost + self.labor_cost
 
     @property
     def margin(self) -> float:
@@ -100,7 +94,7 @@ class TriageDecision:
     financial: FinancialAnalysis | None
     work_order: list[PartRequirement] | None
     inventory_impact: InventoryImpact | None
-    destination_id: int | None
+    destination_id: int | None # 0 - scrap, 1 - refurb, 2 - resell, 3 - review
     timestamp: datetime | None
     classification_input: ClassificationResult | None
 
