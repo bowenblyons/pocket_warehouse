@@ -1,18 +1,18 @@
 from pocket_warehouse.schemas.schemas import (
     ClassificationResult,
-    TriageDecision,
-    PartRequirement,
     FinancialAnalysis,
+    PartRequirement,
+    TriageDecision,
 )
-from pocket_warehouse.utils.config import get_config
 from pocket_warehouse.triage.inventory import check_availability, get_impact
 from pocket_warehouse.triage.margin import calculate_cost
+from pocket_warehouse.utils.config import Config
 
 
-def Triage(result: ClassificationResult) -> TriageDecision:
-
-    cfg = get_config()
-
+def triage(result: ClassificationResult, cfg: Config) -> TriageDecision:
+    """Performs business logic to determine the correct place
+    for the current vehicle to go. Returns a large object to
+    maintain a paper trail and logging in a future iteration."""
     # for each part calculate repair requirements
     parts = result.get_parts()
     parts_list_needs: list[PartRequirement] = []
@@ -34,18 +34,22 @@ def Triage(result: ClassificationResult) -> TriageDecision:
 
     # check availability
     for part_req in parts_list_needs:
-        part_req.is_stocked = check_availability(part_req.name, 1)
+        part_req.is_stocked = check_availability(part_req.name, 1, cfg)
 
     # compute financials
     fin = FinancialAnalysis(0.0, cfg.resell_market_value)
 
     for part_req in parts_list_needs:
         part_req.cost = calculate_cost(
-            part_req.name, part_req.action, part_req.is_stocked
+            part_req.name, part_req.action, part_req.is_stocked, cfg
         )
         fin.total_cost += part_req.cost
 
-    # decision: scrap if its not profitable, resell if no repairs, refurb if repairs, review if low confidence from model
+    # decision:
+    # review if low confidence from model
+    # scrap if its not profitable,
+    # resell if no repairs,
+    # refurb if repairs,
     if result.min_confidence < cfg.confidence_threshold:
         triage_result = "review"
         confidence = result.min_confidence
@@ -73,7 +77,7 @@ def Triage(result: ClassificationResult) -> TriageDecision:
         confidence,
         fin,
         parts_list_needs,
-        get_impact(parts_list_needs),
+        get_impact(parts_list_needs, cfg),
         destination,
         None,
         result,

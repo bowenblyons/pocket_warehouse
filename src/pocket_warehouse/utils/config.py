@@ -1,11 +1,14 @@
-from pathlib import Path
-import yaml
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
+
+import yaml
 
 
 @dataclass
 class PartConfig:
+    """Per part configuration info."""
+
     cost: float
     repair_cost: float
     stock: int
@@ -14,6 +17,8 @@ class PartConfig:
 
 @dataclass
 class Config:
+    """Configuration info for the system."""
+
     resell_market_value: float
     labor_per_repair: float
     confidence_threshold: float
@@ -35,28 +40,9 @@ class Config:
         )
 
 
-_config: Config | None = None
+def load_config(path: Path = Path("config/config.yaml")) -> Config:
 
+    with path.open("r") as f:
+        raw: dict[str, Any] = yaml.safe_load(f)
 
-def load_config(path: Path = Path("config/config.yaml")) -> None:
-
-    global _config
-
-    if _config is None:
-        with path.open("r") as f:
-            raw: dict[str, Any] = yaml.safe_load(f)
-
-        _config = Config.from_dict(raw)
-
-
-def get_config() -> Config:
-
-    if _config is None:
-        load_config()
-
-    assert _config is not None
-
-    return _config
-
-
-load_config()
+    return Config.from_dict(raw)

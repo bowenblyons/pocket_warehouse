@@ -1,10 +1,12 @@
-from pocket_warehouse.utils.config import get_config
+from pocket_warehouse.utils.config import Config
 
 
-def calculate_cost(name: str, action: str, is_stocked: bool) -> float:
+def calculate_cost(
+    name: str, action: str, is_stocked: bool, cfg: Config
+) -> float:
+    """Calculates the total cost of the repair or replacement including labor"""
 
     cost: float = 0.0
-    cfg = get_config()
 
     if action == "replace":
         if not is_stocked:
