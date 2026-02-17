@@ -20,3 +20,6 @@ def capture_image_set(platform_servo_id: int = 5) -> list[str]:
         print(f"{time.time():.2f} → capturing")
         paths.append(str(camera.capture(f"image{angle}.jpg")))
     return paths
+
+if __name__ == "__main__":
+    print(capture_image_set())
