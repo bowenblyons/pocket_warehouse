@@ -23,15 +23,15 @@ class Arm:
     BASE_HOME: int = 90
     CLAW_HOME: int = 30
     ELBOW_HOME: int = 10
-    POSITION_PICKUP: int = 179
+    POSITION_PICKUP: int = 180
     POSITION_SCRAP: int = 130
     POSITION_REFURBISH: int = 90
     POSITION_RESELL: int = 50
     POSITION_REVIEW: int = 1
-    ELBOW_PARTIAL_LOWER: int = 120
+    ELBOW_PARTIAL_LOWER: int = 112
     ELBOW_LOWER: int = 140
     CLAW_OPEN: int = CLAW_HOME
-    CLAW_CLOSE: int = 140
+    CLAW_CLOSE: int = 130
 
     def __init__(self):
         self.servo_id: list[int] = [0, 1, 2]  # 3 is platform swivel

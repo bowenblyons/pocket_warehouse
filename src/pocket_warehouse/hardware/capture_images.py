@@ -4,7 +4,7 @@ from pocket_warehouse.hardware.camera import Camera
 from pocket_warehouse.hardware.servo import Servo
 
 
-def capture_image_set(platform_servo_id: int = 5) -> list[str]:
+def capture_image_set(platform_servo_id: int = 3) -> list[str]:
     """Handles capturing three consecutive images of car at different angles.
 
     Manages a single servo to control platform rotation and the camera module.
@@ -16,9 +16,11 @@ def capture_image_set(platform_servo_id: int = 5) -> list[str]:
     for angle in [0, 75, 150]:
         print(f"{time.time():.2f} → moving to {angle}")
         servo.set_angle(platform_servo_id, angle)
-        time.sleep(1)
+        time.sleep(7.5)
         print(f"{time.time():.2f} → capturing")
         paths.append(str(camera.capture(f"image{angle}.jpg")))
+    # reset servo angle for pickup
+    servo.set_angle(platform_servo_id, 90)
     return paths
 
 if __name__ == "__main__":
