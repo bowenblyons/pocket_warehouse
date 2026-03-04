@@ -34,6 +34,7 @@ I built Pocket Warehouse to explore implementing a triage workflow on a small em
 - Servo controlled robotic arm sorting.
 
 ## Directory Structure
+```
 pocket_warehouse/
 ├── config/
 ├── data/
@@ -48,7 +49,7 @@ pocket_warehouse/
 │       ├── triage/
 │       └── utils/
 └── tests/
-
+```
 ## Lessons Learned
 - ML conversion pipelines are messy unless you find the right tools (pip install ai-edge-litert).
 - Dependencies can be simplified on an embedded device with a single purpose, no virtual environments needed if system Python only has one job.
