@@ -11,9 +11,9 @@ def modified_capture_image_set(car_id: str, platform_servo_id: int = 3) -> list[
     Rotates servo and captures images of cars and puts them in a directory
     named car_id naming the files <car_id>-{0, 75, 150}.jpg
     """
-    paths: list[str] = []
     camera: Camera = Camera()
     servo: Servo = Servo()
+    paths: list[str] = []
     directory_path = Path(f"data/captures/car{car_id}")
     try:
         directory_path.mkdir()
@@ -29,13 +29,17 @@ def modified_capture_image_set(car_id: str, platform_servo_id: int = 3) -> list[
         time.sleep(7.5)
         print(f"{time.time():.2f} → capturing")
         paths.append(str(camera.capture(f"car{car_id}/{car_id}-{angle}.jpg")))
+        
     # reset servo
     servo.set_angle(platform_servo_id, 90)
 
+    camera.close()
+    
     return paths
 
 if __name__ == "__main__":
-    i = 0
+
+    i = int(input("Starting id: "))
     image_paths: list[str] = []
     file_path = "dataset_paths.txt"
 
@@ -46,6 +50,7 @@ if __name__ == "__main__":
 
             for id in ids:
                 image_paths.append(id)
+            i += 1
     except KeyboardInterrupt:
         print(f"\nEnding data collection. {i+1} image sets collected")
         print(f"Appending files to {file_path}")
