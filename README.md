@@ -3,8 +3,8 @@ Pocket Warehouse is a Raspberry Pi powered robotic triage system that classifies
 
 ## Demo
 Partial Success! Need to make some adjustments to the arm to better distribute the weight.
-[Download the video](https://raw.githubusercontent.com/bowenblyons/pocket_warehouse/main/demo_video/partial_success.mp4)
-[Watch on youtube](https://www.youtube.com/watch?v=WEFvorjLpUw)
+- [Download the video](https://raw.githubusercontent.com/bowenblyons/pocket_warehouse/main/demo_video/partial_success.mp4)
+- [Watch on youtube](https://www.youtube.com/watch?v=WEFvorjLpUw)
 
 
 The system captures a set of three images of the car at different angles, performs inference on each image, merges the predictions by selecting for max confidence, calculates the potential profit, and instructs a robotic arm to move the car to the appropriate location.
